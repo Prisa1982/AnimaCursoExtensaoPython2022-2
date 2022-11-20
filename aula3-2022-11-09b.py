@@ -33,3 +33,17 @@ valores = [1.99,24.50,78.27,1515.5]
 # se eu quiser calcular o imposto deste quatro valores...e exibir na tela assim..."O imposto de....é.....(1o.preço, 20.imposto)
 for valor in valores:
   print(f"O imposto de {valor} é {calcular_imposto(valor)}")
+
+
+#Declarar uma função calcula_imposto_aliquota que recebe dois parâmetros: o preço do produto e a alíquota de imposto a ser aplicada e retorna o imposto aplicado. Se a aliquota não for informada, utiliza 7% como padrão.
+def calcular_imposto_aliquota(valor,aliquota=7):
+  imposto = valor * aliquota / 100
+  return imposto
+
+for valor in valores:
+  print(f"O imposto de {valor} é {calcular_imposto_aliquota(valor,7)}")
+  #E se agora o imposto for 10%?
+  for valor in valores:
+    print(f"O imposto de {valor} é {calcular_imposto_aliquota(valor,10)}")
+
+    
