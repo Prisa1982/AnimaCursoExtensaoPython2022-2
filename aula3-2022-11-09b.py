@@ -13,7 +13,7 @@ print(imposto2)
 #Criar um funcão calcular_imposto() que calcula um imposto de 5% e retorna a quem pediu...
 #Isso é a declaração da função ( Como ela funciona)
 def calcular_imposto(preco_produto):
-  imposto = preco_produto * 0.05
+  imposto = preco_produto * 0.07
   return imposto
   print(imposto)
 
