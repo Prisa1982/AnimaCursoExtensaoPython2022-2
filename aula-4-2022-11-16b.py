@@ -13,8 +13,6 @@ sql = "INSERT INTO pessoas (pessoa_id, nome, nome_civil, tipo) VALUES (12, 'The 
 
 #5o. passo: Executar o comando SQL
 cursor.execute(sql)
-
 #6o. passo: Confirmar o INSERT com commit() e fechar o banco
 conexao.commit()
 conexao.close()
-
